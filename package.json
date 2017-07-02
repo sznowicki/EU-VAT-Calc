@@ -1,0 +1,31 @@
+{
+  "name": "eu-vat-calc",
+  "version": "1.0.0",
+  "description": "Provide country code, company boolean flag and receive VAT amount (percentage). ",
+  "main": "eu-vat-calc.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sznowicki/PL-VAT-Calc.git"
+  },
+  "keywords": [
+    "VAT",
+    "EU-VAT",
+    "MOSS"
+  ],
+  "author": "Szymon Nowicki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sznowicki/PL-VAT-Calc/issues"
+  },
+  "homepage": "https://github.com/sznowicki/PL-VAT-Calc#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.6.1",
+    "mocha": "^3.4.2"
+  }
+}

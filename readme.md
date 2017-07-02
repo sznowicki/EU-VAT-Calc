@@ -1,22 +1,11 @@
-#What is PL-VAT-Calc? */
+#What is EU-VAT-CALC?
+Simple function which returns VAT according to country and information if your payer represents a company or not.
 
-Polish tax law is not nice and simple at the first sight. However, with lots of my accountant help I finally
-got it.
+## Disclaimer
+This script is made by one, private person. You use this software at your own risk. Always check the source code. Do not "npm i" and blindly use anything, especially if it's related to taxation.
 
-Schema for calculating VAT for e-services provided by Polish company looks like this:
-if buyer is located in:
-- Poland - always 23%
-- other EU country and is the purchase is not for company purposes - 23 %
-- other EU country but purchase is for company purposes - 0% (invoice must be send to customer)
-- other country (not EU) - always 0%
+## Example
+For examples check test folder.
+## Credits
+Thanks https://euvatrates.com/rates.json for data source. Feel free to create pull request if you find ./res/rates.json out of date.
 
-## How it works?
-It's simple script, so usage is also simple. See example in js file.
-
-## License
-It's free / public domain, use it is any way you like. On commercial or non-commercial projects. It would be nice if you
-attribute me on a script comment.
-
-##WARRANTY and RESPONSIBILITY
-I DO NOT RESPONSE FOR ANY USE OF THIS SOFTWARE. YOU USE IT AT YOUR OWN RISK. 
-CONSULT USAGE OF THIS SCHEMA WITH YOUR ACCOUNTANT!
