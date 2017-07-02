@@ -1,4 +1,4 @@
-#What is EU-VAT-CALC?
+# What is EU-VAT-CALC?
 Simple function which returns VAT according to country and information if your payer represents a company or not.
 
 ## Disclaimer
