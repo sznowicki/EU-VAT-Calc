@@ -1,6 +1,6 @@
 {
   "name": "eu-vat-calc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provide country code, company boolean flag and receive VAT amount (percentage). ",
   "main": "eu-vat-calc.js",
   "scripts": {
@@ -18,9 +18,9 @@
   "author": "Szymon Nowicki",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sznowicki/PL-VAT-Calc/issues"
+    "url": "https://github.com/sznowicki/eu-vat-calc/issues"
   },
-  "homepage": "https://github.com/sznowicki/PL-VAT-Calc#readme",
+  "homepage": "https://github.com/sznowicki/eu-vat-calc#readme",
   "devDependencies": {
     "chai": "^4.0.2",
     "eslint": "^3.19.0",
