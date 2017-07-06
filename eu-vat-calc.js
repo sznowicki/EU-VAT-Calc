@@ -2,15 +2,19 @@ const Rates = require('./res/rates.json');
 
 class EUVatCalc {
   static getRate(countryId) {
-    if (!Rates.rates.hasOwnProperty(countryId)) {
+    if (!this.rates.hasOwnProperty(countryId)) {
       throw new Error(`Unknown country: ${countryId}. Check rates.json file for list of possible countries. If you see something out of date, feel free to contribute on GitHub.`)
     }
 
-    return Rates.rates[countryId];
+    return this.rates[countryId];
   }
 
   static isEU(countryId) {
-    return Rates.rates.hasOwnProperty(countryId);
+    return this.rates.hasOwnProperty(countryId);
+  }
+
+  static get rates() {
+    return Rates.rates;
   }
 
   constructor({ domesticCountry }) {
