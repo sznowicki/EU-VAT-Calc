@@ -17,7 +17,7 @@ class EUVatCalc {
     return Rates.rates;
   }
 
-  constructor({ domesticCountry }) {
+  constructor({ domesticCountry } = {}) {
     if (!domesticCountry) {
       throw new Error('You must provide domestic country');
     }
