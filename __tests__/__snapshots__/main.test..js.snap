@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main test PL test should give 0% for EU company 1`] = `0`;
+
+exports[`Main test PL test should give 19% for DE customer 1`] = `19`;
+
+exports[`Main test PL test should give 23% for company customer 1`] = `23`;
+
+exports[`Main test PL test should give 23% for standard customer 1`] = `23`;
