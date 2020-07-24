@@ -45,11 +45,7 @@ class EUVatCalc {
      * Non EU countries - always 0% (non-EU export)
      * EU countries, but companies - 0% (internal EU export)
      */
-    if (
-      !this.constructor.isEU(countryId)
-      ||
-        isCompany
-    ) {
+    if (!this.constructor.isEU(countryId) || isCompany) {
       return {
         standard_rate: 0,
       };
