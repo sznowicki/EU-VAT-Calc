@@ -1,254 +1,385 @@
 {
-  "last_updated": "2016-01-01T22:34Z",
-  "disclaimer": "This data is compiled from official European Commission sources to be as accurate as possible, however no guarantee of accuracy is provided. Use at your own risk. Don't trust random people on the internet without doing your own research.",
   "rates": {
     "AT": {
-      "country": "Austria",
-      "standard_rate": 20.00,
-      "reduced_rate": 10.00,
-      "reduced_rate_alt": 13.00,
-      "super_reduced_rate": false,
-      "parking_rate": 12.00
+      "country_name": "Austria",
+      "standard_rate": 20,
+      "reduced_rates": {
+        "foodstuffs": 10,
+        "books": 10,
+        "pharmaceuticals": 10,
+        "passenger transport": 10,
+        "newspapers": 10,
+        "admission to cultural events": 10,
+        "hotels": 10,
+        "admission to entertainment events": 10
+      }
     },
     "BE": {
-      "country": "Belgium",
-      "standard_rate": 21.00,
-      "reduced_rate": 12.00,
-      "reduced_rate_alt": 6.00,
-      "super_reduced_rate": false,
-      "parking_rate": 12.00
+      "country_name": "Belgium",
+      "standard_rate": 21,
+      "reduced_rates": {
+        "restaurants": 12,
+        "foodstuffs": 6,
+        "books": 6,
+        "water": 6,
+        "pharmaceuticals": 6,
+        "medical": 6,
+        "newspapers": 6,
+        "hotels": 6,
+        "admission to cultural events": 6,
+        "admission to entertainment events": 6
+      }
     },
     "BG": {
-      "country": "Bulgaria",
-      "standard_rate": 20.00,
-      "reduced_rate": 9.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "CY": {
-      "country": "Cyprus",
-      "standard_rate": 19.00,
-      "reduced_rate": 9.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "CZ": {
-      "country": "Czech Republic",
-      "standard_rate": 21.00,
-      "reduced_rate": 15.00,
-      "reduced_rate_alt": 10.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "DK": {
-      "country": "Denmark",
-      "standard_rate": 25.00,
-      "reduced_rate": false,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "DE": {
-      "country": "Germany",
-      "standard_rate": 19.00,
-      "reduced_rate": 7.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "EE": {
-      "country": "Estonia",
-      "standard_rate": 20.00,
-      "reduced_rate": 9.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "EL": {
-      "_comment": "While the EU uses the country code 'EL' for Greece, ISO uses 'GR' - both are included for convenience.",
-      "iso_duplicate": "GR",
-      "country": "Greece",
-      "standard_rate": 24.00,
-      "reduced_rate": 13.00,
-      "reduced_rate_alt": 6.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "GR": {
-      "_comment": "Duplicate of EL for convenience; the EU uses the country code 'EL' for Greece, while ISO uses 'GR'.",
-      "iso_duplicate_of": "EL",
-      "country": "Greece",
-      "standard_rate": 24.00,
-      "reduced_rate": 13.00,
-      "reduced_rate_alt": 6.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "ES": {
-      "country": "Spain",
-      "standard_rate": 21.00,
-      "reduced_rate": 10.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": 4.00,
-      "parking_rate": false
-    },
-    "FI": {
-      "country": "Finland",
-      "standard_rate": 24.00,
-      "reduced_rate": 14.00,
-      "reduced_rate_alt": 10.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "FR": {
-      "country": "France",
-      "standard_rate": 20.00,
-      "reduced_rate": 10.00,
-      "reduced_rate_alt": 5.50,
-      "super_reduced_rate": 2.10,
-      "parking_rate": false
+      "country_name": "Bulgaria",
+      "standard_rate": 20,
+      "reduced_rates": {
+        "hotels": 9
+      }
     },
     "HR": {
-      "country": "Croatia",
-      "standard_rate": 25.00,
-      "reduced_rate": 13.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Croatia",
+      "standard_rate": 25,
+      "reduced_rates": {
+        "hotels": 13,
+        "newspapers": 13
+      }
     },
-    "IT": {
-      "country": "Italy",
-      "standard_rate": 22.00,
-      "reduced_rate": 10.00,
-      "reduced_rate_alt": 4.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
+    "CY": {
+      "country_name": "Cyprus",
+      "standard_rate": 19,
+      "reduced_rates": {
+        "hotels": 9,
+        "restaurants": 9,
+        "foodstuffs": 5,
+        "books": 5,
+        "pharmaceuticals": 5,
+        "medical": 5,
+        "passenger transport": 5,
+        "newspapers": 5,
+        "admission to cultural events": 5,
+        "admission to entertainment events": 5,
+        "admission to sporting events": 5
+      }
     },
-    "LV": {
-      "country": "Latvia",
-      "standard_rate": 21.00,
-      "reduced_rate": 12.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
+    "CZ": {
+      "country_name": "Czech Republic",
+      "standard_rate": 21,
+      "reduced_rates": {
+        "foodstuffs": 15,
+        "medical": 10,
+        "pharmaceuticals": 10,
+        "passenger transport": 15,
+        "newspapers": 15,
+        "admission to cultural events": 15,
+        "admission to sporting events": 15,
+        "admission to entertainment events": 15,
+        "hotels": 15,
+        "books": 10,
+        "baby foodstuffs": 10
+      }
     },
-    "LT": {
-      "country": "Lithuania",
-      "standard_rate": 21.00,
-      "reduced_rate": 9.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
+    "DK": {
+      "country_name": "Denmark",
+      "standard_rate": 25,
+      "reduced_rates": null
     },
-    "LU": {
-      "country": "Luxembourg",
-      "standard_rate": 17.00,
-      "reduced_rate": 14.00,
-      "reduced_rate_alt": 8.00,
-      "super_reduced_rate": 3.00,
-      "parking_rate": 12.00
+    "EE": {
+      "country_name": "Estonia",
+      "standard_rate": 20,
+      "reduced_rates": {
+        "books": 9,
+        "pharmaceuticals": 9,
+        "medical": 9,
+        "hotels": 9
+      }
+    },
+    "FI": {
+      "country_name": "Finland",
+      "standard_rate": 24,
+      "reduced_rates": {
+        "foodstuffs": 14,
+        "restaurants": 14,
+        "books": 10,
+        "pharmaceuticals": 10,
+        "passenger transport": 10,
+        "newspapers": 10,
+        "admission to cultural events": 10,
+        "admission to sporting events": 10,
+        "admission to entertainment events": 10,
+        "hotels": 10
+      }
+    },
+    "FR": {
+      "country_name": "France",
+      "standard_rate": 20,
+      "reduced_rates": {
+        "pharmaceuticals": 2.1,
+        "passenger transport": 10,
+        "admission to cultural events": 10,
+        "admission to sporting events": 10,
+        "admission to entertainment events": 10,
+        "hotels": 10,
+        "accommodation": 10,
+        "restaurants": 10,
+        "medical": 5.5,
+        "foodstuffs": 5.5,
+        "e-books": 5.5,
+        "books": 5.5,
+        "newspapers": 2.1
+      }
+    },
+    "DE": {
+      "country_name": "Germany",
+      "standard_rate": 16,
+      "reduced_rates": {
+        "foodstuffs": 5,
+        "books": 5,
+        "medical": 5,
+        "passenger transport": 5,
+        "newspapers": 5,
+        "admission to cultural events": 5,
+        "admission to entertainment events": 5,
+        "hotels": 5
+      }
+    },
+    "GR": {
+      "country_name": "Greece",
+      "standard_rate": 24,
+      "reduced_rates": {
+        "foodstuffs": 13,
+        "pharmaceuticals": 13,
+        "medical": 13,
+        "admission to cultural events": 13,
+        "admission to sporting events": 13,
+        "admission to entertainment events": 13,
+        "books": 6.5,
+        "newspapers": 6.5,
+        "hotels": 6.5
+      }
     },
     "HU": {
-      "country": "Hungary",
-      "standard_rate": 27.00,
-      "reduced_rate": 18.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Hungary",
+      "standard_rate": 27,
+      "reduced_rates": {
+        "foodstuffs": 18,
+        "hotels": 18,
+        "books": 5,
+        "pharmaceuticals": 5,
+        "medical": 5
+      }
     },
     "IE": {
-      "country": "Ireland",
-      "standard_rate": 23.00,
-      "reduced_rate": 13.50,
-      "reduced_rate_alt": 9.00,
-      "super_reduced_rate": 4.80,
-      "parking_rate": 13.50
+      "country_name": "Ireland",
+      "standard_rate": 23,
+      "reduced_rates": {
+        "medical": 13.5,
+        "newspapers": 9,
+        "admission to cultural events": 13.5,
+        "admission to sporting events": 0,
+        "admission to entertainment events": 13.5,
+        "hotels": 13.5,
+        "restaurants": 13.5,
+        "foodstuffs": 4.8,
+        "books": 0,
+        "childrens clothing": 0
+      }
+    },
+    "IT": {
+      "country_name": "Italy",
+      "standard_rate": 22,
+      "reduced_rates": {
+        "pharmaceuticals": 10,
+        "passenger transport": 10,
+        "admission to cultural events": 10,
+        "admission to entertainment events": 10,
+        "hotels": 10,
+        "restaurants": 10,
+        "foodstuffs": 4,
+        "medical": 4,
+        "books": 4,
+        "e-books": 4
+      }
+    },
+    "LV": {
+      "country_name": "Latvia",
+      "standard_rate": 21,
+      "reduced_rates": {
+        "books": 12,
+        "pharmaceuticals": 12,
+        "medical": 12,
+        "newspapers": 12,
+        "hotels": 12
+      }
+    },
+    "LT": {
+      "country_name": "Lithuania",
+      "standard_rate": 21,
+      "reduced_rates": {
+        "books": 9,
+        "pharmaceuticals": 5,
+        "medical": 5
+      }
+    },
+    "LU": {
+      "country_name": "Luxembourg",
+      "standard_rate": 17,
+      "reduced_rates": {
+        "wine": 14,
+        "domestic fuel": 14,
+        "advertising": 14,
+        "bikes": 8,
+        "domestic services": 8,
+        "books": 3,
+        "foodstuffs": 3,
+        "pharmaceuticals": 3,
+        "medical": 3,
+        "passenger transport": 3,
+        "newspapers": 3,
+        "admission to cultural events": 3,
+        "admission to sporting events": 3,
+        "admission to entertainment events": 3,
+        "hotels": 3,
+        "restaurants": 3,
+        "e-books": 3
+      }
     },
     "MT": {
-      "country": "Malta",
-      "standard_rate": 18.00,
-      "reduced_rate": 7.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Malta",
+      "standard_rate": 18,
+      "reduced_rates": {
+        "hotels": 7,
+        "books": 5,
+        "medical": 5,
+        "newspapers": 5,
+        "admission to cultural events": 5,
+        "e-books": 5,
+        "foodstuffs": 0,
+        "pharmaceuticals": 0
+      }
     },
     "NL": {
-      "country": "Netherlands",
-      "standard_rate": 21.00,
-      "reduced_rate": 6.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Netherlands",
+      "standard_rate": 21,
+      "reduced_rates": {
+        "foodstuffs": 9,
+        "books": 9,
+        "pharmaceuticals": 9,
+        "medical": 9,
+        "passenger transport": 9,
+        "admission to cultural events": 9,
+        "admission to entertainment events": 9,
+        "hotels": 9,
+        "accommodation": 9
+      }
     },
     "PL": {
-      "country": "Poland",
-      "standard_rate": 23.00,
-      "reduced_rate": 8.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Poland",
+      "standard_rate": 23,
+      "reduced_rates": {
+        "pharmaceuticals": 8,
+        "medical": 8,
+        "passenger transport": 8,
+        "newspapers": 8,
+        "hotels": 8,
+        "restaurants": 8,
+        "admission to cultural events": 8,
+        "admission to sporting events": 8,
+        "admission to entertainment events": 8,
+        "foodstuffs": 5
+      }
     },
     "PT": {
-      "country": "Portugal",
-      "standard_rate": 23.00,
-      "reduced_rate": 13.00,
-      "reduced_rate_alt": 6.00,
-      "super_reduced_rate": false,
-      "parking_rate": 13.00
+      "country_name": "Portugal",
+      "standard_rate": 23,
+      "reduced_rates": {
+        "foodstuffs": 6,
+        "agricultural supplies": 13,
+        "books": 6,
+        "pharmaceuticals": 6,
+        "medical": 6,
+        "newspapers": 6,
+        "hotels": 6,
+        "passenger transport": 6
+      }
     },
     "RO": {
-      "country": "Romania",
-      "standard_rate": 20.00,
-      "reduced_rate": 9.00,
-      "reduced_rate_alt": 5.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "SI": {
-      "country": "Slovenia",
-      "standard_rate": 22.00,
-      "reduced_rate": 9.50,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Romania",
+      "standard_rate": 19,
+      "reduced_rates": {
+        "books": 9,
+        "pharmaceuticals": 9,
+        "medical": 9,
+        "newspapers": 9,
+        "admission to cultural events": 9,
+        "admission to entertainment events": 9,
+        "hotels": 9,
+        "foodstuffs": 9,
+        "social housing": 5
+      }
     },
     "SK": {
-      "country": "Slovakia",
-      "standard_rate": 20.00,
-      "reduced_rate": 10.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Slovakia",
+      "standard_rate": 20,
+      "reduced_rates": {
+        "books": 10,
+        "foodstuffs": 10,
+        "medical": 10,
+        "pharmaceuticals": 10,
+        "admission to cultural events": 10,
+        "admission to entertainment events": 10
+      }
+    },
+    "SI": {
+      "country_name": "Slovenia",
+      "standard_rate": 22,
+      "reduced_rates": {
+        "foodstuffs": 9.5,
+        "books": 9.5,
+        "pharmaceuticals": 9.5,
+        "medical": 9.5,
+        "newspapers": 9.5,
+        "admission to sporting events": 9.5,
+        "admission to cultural events": 9.5,
+        "admission to entertainment events": 9.5,
+        "hotels": 9.5
+      }
+    },
+    "ES": {
+      "country_name": "Spain",
+      "standard_rate": 21,
+      "reduced_rates": {
+        "medical": 10,
+        "pharmaceuticals": 10,
+        "passenger transport": 10,
+        "admission to cultural events": 10,
+        "admission to sporting events": 10,
+        "admission to entertainment events": 10,
+        "foodstuffs": 4,
+        "newspapers": 4
+      }
     },
     "SE": {
-      "country": "Sweden",
-      "standard_rate": 25.00,
-      "reduced_rate": 12.00,
-      "reduced_rate_alt": 6.00,
-      "super_reduced_rate": false,
-      "parking_rate": false
-    },
-    "UK": {
-      "_comment": "While the EU uses the country code 'UK' for the United Kingdom, ISO uses 'GB' - both are included for convenience.",
-      "iso_duplicate": "GB",
-      "country": "United Kingdom",
-      "standard_rate": 20.00,
-      "reduced_rate": 5.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "Sweden",
+      "standard_rate": 25,
+      "reduced_rates": {
+        "foodstuffs": 12,
+        "books": 6
+      }
     },
     "GB": {
-      "_comment": "Duplicate of GB for convenience; the EU uses the country code 'UK' for the United Kingdom, while ISO uses 'GB'.",
-      "iso_duplicate_of": "UK",
-      "country": "United Kingdom",
-      "standard_rate": 20.00,
-      "reduced_rate": 5.00,
-      "reduced_rate_alt": false,
-      "super_reduced_rate": false,
-      "parking_rate": false
+      "country_name": "United Kingdom",
+      "standard_rate": 20,
+      "reduced_rates": {
+        "property renovations": 5,
+        "foodstuffs": 0,
+        "books": 0,
+        "pharmaceuticals": 0,
+        "medical": 0,
+        "passenger transport": 0,
+        "newspapers": 0,
+        "childrens clothing": 0
+      }
     }
   }
 }

@@ -2,7 +2,8 @@
 Simple function which returns VAT according to country and information if your payer represents a company or not.
 
 ## Disclaimer
-This script is made by one, private person. You use this software at your own risk. Always check the source code. One shall not "npm i" and blindly use anything, especially if it's related to taxation.
+This script is made by a private person. You use this software at your own risk.
+ Always check the source code.
 
 ## Examples
 Get VAT percentage by countryId and isCompany
@@ -18,11 +19,11 @@ Get all data
 * {
 *   AT: {
 *        "country": "Austria",
-*        "standard_rate": 20.00,
-*        "reduced_rate": 10.00,
-*        "reduced_rate_alt": 13.00,
+*        "standard_rate": 20,
+*        "reduced_rate": 10,
+*        "reduced_rate_alt": 13,
 *        "super_reduced_rate": false,
-*        "parking_rate": 12.00
+*        "parking_rate": 12
 *      },
 *   BE: ...
 *  }
@@ -34,10 +35,5 @@ const calculator = new EUVatCalc({domesticCountry: 'DE'});
 calculator.constructor.rates;
 ```
 ## Credits
-Thanks https://euvatrates.com/rates.json for data source. Feel free to create pull request if you find ./res/rates.json out of date.
-
-## Contribute!
-Like this, find it usefull? Star on github!
-See something to adjust? Data update? Contribute!
-Need some help? Create an issue on github. I'm always glad to help.
+Data comes from http://apilayer.net. We highly recommend them!
 
