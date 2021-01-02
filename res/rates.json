@@ -131,16 +131,16 @@
     },
     "DE": {
       "country_name": "Germany",
-      "standard_rate": 16,
+      "standard_rate": 19,
       "reduced_rates": {
-        "foodstuffs": 5,
-        "books": 5,
-        "medical": 5,
-        "passenger transport": 5,
-        "newspapers": 5,
-        "admission to cultural events": 5,
-        "admission to entertainment events": 5,
-        "hotels": 5
+        "foodstuffs": 7,
+        "books": 7,
+        "medical": 7,
+        "passenger transport": 7,
+        "newspapers": 7,
+        "admission to cultural events": 7,
+        "admission to entertainment events": 7,
+        "hotels": 7
       }
     },
     "GR": {
@@ -171,7 +171,7 @@
     },
     "IE": {
       "country_name": "Ireland",
-      "standard_rate": 23,
+      "standard_rate": 21,
       "reduced_rates": {
         "medical": 13.5,
         "newspapers": 9,
