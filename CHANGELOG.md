@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.2.0
+- Update VAT rates.
+- Update dev dependencies.
+- Minor code style changes.
+
 ## v2.1.0
 - update VAT rates for DE, IE
 - update dev dependencies
