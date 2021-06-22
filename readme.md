@@ -2,8 +2,7 @@
 Simple function which returns VAT according to country and information if your payer represents a company or not.
 
 ## Disclaimer
-This script is made by a private person. You use this software at your own risk.
- Always check the source code.
+You use this software at your own risk.
 
 ## Examples
 Get VAT percentage by countryId and isCompany
