@@ -1,6 +1,6 @@
 module.exports = {
-  extends: 'airbnb',
-  plugins: [
-    'eslint-plugin-import',
-  ],
+  extends: 'airbnb-base',
+  env: {
+    jest: true,
+  },
 };

@@ -4,7 +4,7 @@ describe('Main test', () => {
   describe('.constructor.rates test', () => {
     it('should return all rates data', () => {
       expect(typeof EUVATCalc.rates).toBe('object');
-    })
+    });
   });
 
   describe('PL test', () => {
@@ -18,7 +18,7 @@ describe('Main test', () => {
     });
 
     it('should give 0% for EU company', () => {
-      expect(eupl.getVat('DE', true).standard_rate).toMatchSnapshot()
+      expect(eupl.getVat('DE', true).standard_rate).toMatchSnapshot();
     });
 
     it('should give 19% for DE customer', () => {
@@ -29,15 +29,15 @@ describe('Main test', () => {
   describe('Error handling', () => {
     it('should throw when not providing domestic country', () => {
       expect(() => {
+        // eslint-disable-next-line no-new
         new EUVATCalc();
       }).toThrow();
     });
 
     it('should throw when country is not supported', () => {
       expect(() => {
-        EUVATCalc.getRate('NOT_A_COUNTRY')
+        EUVATCalc.getRate('NOT_A_COUNTRY');
       }).toThrow();
-    })
+    });
   });
-
 });
