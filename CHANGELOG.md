@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v2.3.0
+- Added `onlyDomesticTaxPayer` param to a constructor (see [README](./README.md)).
+  `
 ## v2.2.0
 - Update VAT rates.
 - Update dev dependencies.
