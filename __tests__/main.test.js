@@ -21,6 +21,10 @@ describe('Main test', () => {
       expect(eupl.getVat('DE', true).standard_rate).toMatchSnapshot();
     });
 
+    it('should give 0% for nonEU consumer', () => {
+      expect(eupl.getVat('OUTSIDE_EU', true).standard_rate).toEqual(0);
+    });
+
     it('should give 19% for DE customer', () => {
       expect(eupl.getVat('DE', false).standard_rate).toMatchSnapshot();
     });

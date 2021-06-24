@@ -17,7 +17,7 @@ class EUVatCalc {
     return Rates.rates;
   }
 
-  constructor({ domesticCountry } = {}) {
+  constructor({ domesticCountry, onlyDomesticTaxPayer = false } = {}) {
     if (!domesticCountry) {
       throw new Error('You must provide domestic country');
     }
@@ -25,10 +25,11 @@ class EUVatCalc {
     this.constructor.getRate(domesticCountry);
 
     this.domesticCountry = domesticCountry;
+    this.domesticPayer = onlyDomesticTaxPayer;
   }
 
   /**
-   * Returns VAT rates for selected countryId and customer type (isCompany)
+   * Returns VAT rates for provided countryId and customer type (isCompany)
    * @param countryId
    * @param isCompany
    * @return {Object} rate entry if applicable, 0 if no VAT for this customer.
@@ -49,6 +50,10 @@ class EUVatCalc {
       return {
         standard_rate: 0,
       };
+    }
+
+    if (this.domesticPayer) {
+      return this.constructor.getRate(this.domesticCountry);
     }
 
     return this.constructor.getRate(countryId);
