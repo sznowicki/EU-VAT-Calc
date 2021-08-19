@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v2.4.0
+- Updated rates (without GB this time).
+
 ## v2.3.0
 - Added `onlyDomesticTaxPayer` param to a constructor (see [README](./README.md)).
   `
