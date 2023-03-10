@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/sznowicki/eu-vat-calc#readme",
   "devDependencies": {
-    "jest": "^29.4.3"
+    "jest": "^29.5.0"
   }
 }
