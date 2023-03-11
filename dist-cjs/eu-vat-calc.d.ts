@@ -6,7 +6,7 @@ export interface CountryRatesSimplified {
 }
 export interface EUVatCalcOptions {
     domesticCountry: string | undefined;
-    onlyDomesticTaxPayer: boolean;
+    onlyDomesticTaxPayer?: boolean;
 }
 export declare class EUVatCalc {
     domesticCountry: CountryId;
@@ -21,6 +21,6 @@ export declare class EUVatCalc {
      * @param isCompany
      * @return {Object} rate entry if applicable, 0 if no VAT for this customer.
      */
-    getVat(countryId: any, isCompany: any): CountryRatesSimplified;
+    getVat(countryId: CountryId, isCompany: boolean): CountryRatesSimplified;
 }
 export default EUVatCalc;

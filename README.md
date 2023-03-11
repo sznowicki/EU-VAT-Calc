@@ -1,6 +1,12 @@
 # What is EU-VAT-CALC?
 Small class to calculate taxes for businesses that pay EU VAT tax.
 
+## CJS and ESM module exports since v3.0.0
+This module exports both `cjs` and `esm` modules from a single package.
+It should work out of the box, but if you observe any problems please report here in Github.
+
+In case of errors, downgrade to 2.4.0. Functional wise those packages are the same.
+
 ## Use cases
 ### For those under MOSS procedure
 If you're under a Mini One Stop Shop procedure (or even if not, but pay consumer VAT in every EU country):

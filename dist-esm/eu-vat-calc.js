@@ -21,7 +21,7 @@ export class EUVatCalc {
         // input validation
         EUVatCalc.getRate(options.domesticCountry);
         this.domesticCountry = options.domesticCountry;
-        this.domesticPayer = options.onlyDomesticTaxPayer;
+        this.domesticPayer = !!options.onlyDomesticTaxPayer;
     }
     /**
      * Returns VAT rates for provided countryId and customer type (isCompany)
