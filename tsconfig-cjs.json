@@ -1,0 +1,10 @@
+{
+  "include": ["./src"],
+  "exclude": ["**/__tests__/**"],
+  "compilerOptions": {
+    "outDir": "dist-cjs",
+    "target": "ES6",
+    "module": "commonjs",
+    "declaration": false
+  }
+}

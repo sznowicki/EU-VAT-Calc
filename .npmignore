@@ -2,5 +2,5 @@
 .DS_Store
 node_modules
 coverage
-__tests__
+src/__tests__
 
