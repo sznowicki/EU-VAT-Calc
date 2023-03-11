@@ -9,7 +9,7 @@ export interface CountryRatesSimplified {
 
 export interface EUVatCalcOptions {
   domesticCountry: string | undefined;
-  onlyDomesticTaxPayer: boolean
+  onlyDomesticTaxPayer?: boolean
 }
 export class EUVatCalc {
   public domesticCountry: CountryId;
@@ -39,7 +39,7 @@ export class EUVatCalc {
     EUVatCalc.getRate(options.domesticCountry);
 
     this.domesticCountry = options.domesticCountry;
-    this.domesticPayer = options.onlyDomesticTaxPayer;
+    this.domesticPayer = !!options.onlyDomesticTaxPayer;
   }
 
   /**
