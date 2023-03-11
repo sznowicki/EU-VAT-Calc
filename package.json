@@ -2,10 +2,9 @@
   "name": "eu-vat-calc",
   "version": "3.0.0-alpha.2",
   "description": "Provide country code, company boolean flag and receive VAT amount (percentage). ",
-  "type": "module",
-  "main": "dist-cjs/eu-vat-calc.js",
-  "module": "dist-esm/eu-vat-calc.js",
-  "types": "dist-types/eu-vat-cald.d.ts",
+  "main": "./dist-cjs/eu-vat-calc.js",
+  "module": "./dist-esm/eu-vat-calc.js",
+  "types": "./dist-types/eu-vat-cald.d.ts",
   "exports": {
     ".": {
       "import": "./dist-esm/eu-vat-calc.js",
@@ -15,9 +14,10 @@
   "scripts": {
     "test": "jest",
     "clean": "rm -rf dist-cjs dist-esm dist-types",
+    "make:files": "cp package-esm.json dist-esm/package.json",
     "build:cjs": "tsc --project tsconfig-cjs.json",
     "build:esm": "tsc --project tsconfig.json",
-    "build": "yarn clean && yarn build:cjs && yarn build:esm",
+    "build": "yarn clean && yarn build:cjs && yarn build:esm && yarn make:files",
     "cover": "jest --coverage"
   },
   "repository": {
