@@ -2,5 +2,7 @@
 .DS_Store
 node_modules
 coverage
-src/__tests__
-
+integration
+tsconfig.json
+tsconfig-cjs.json
+src
