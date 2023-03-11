@@ -48,7 +48,7 @@ export class EUVatCalc {
    * @param isCompany
    * @return {Object} rate entry if applicable, 0 if no VAT for this customer.
    */
-  getVat(countryId, isCompany): CountryRatesSimplified {
+  getVat(countryId: CountryId, isCompany: boolean): CountryRatesSimplified {
     /**
      * Same country as domestic - always same VAT
      */
