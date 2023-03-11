@@ -25,7 +25,7 @@ calculator.getVat('SOME_OTHER_COUNTRY_NOT_IN_EU', false); // consumer, not in EU
 
 ## Class API
 ### constructor({ domesticCountry: string, onlyDomesticPayer: bool}) => EUVatCalc
-- domesticCountry: string - valid EU country code, all posible codes you can find in the [rates.json](./res/rates.json)
+- domesticCountry: string - valid EU country code, all posible codes you can find in the [rates.json](src/res/rates.json)
 - onlyDomesticPayer: bool - true when calculations should assume payer opt out from MOSS
 
 ### Methods
@@ -36,16 +36,16 @@ Returns VAT rates for provided countryId and customer type.
 
 ### Static methods
 #### getRate(countryId: string) => {Rate}
-Returns selected rate (if exists) from [rates](./res/rates.json) file.
+Returns selected rate (if exists) from [rates](src/res/rates.json) file.
 
 Throws if country doesn't exist.
 
 #### isEU(countryId) => bool
-Checks if country exists in [rates](./res/rates.json) file. 
+Checks if country exists in [rates](src/res/rates.json) file. 
 
 ### Static getters
 #### rates
-Returns content of [rates](./res/rates.json) file.
+Returns content of [rates](src/res/rates.json) file.
 
 ```
 const rates = EUVatCalc.rates;

@@ -1,0 +1,11 @@
+{
+  "include": ["./src"],
+  "exclude": ["**/__tests__/**"],
+  "compilerOptions": {
+    "outDir": "dist-esm",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "declaration": true
+  }
+}

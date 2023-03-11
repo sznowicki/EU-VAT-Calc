@@ -1,4 +1,4 @@
-const EUVATCalc = require('../eu-vat-calc');
+import EUVATCalc from '../eu-vat-calc.js'
 
 describe('Main test', () => {
   describe('.constructor.rates test', () => {
@@ -33,7 +33,7 @@ describe('Main test', () => {
   describe('Error handling', () => {
     it('should throw when not providing domestic country', () => {
       expect(() => {
-        // eslint-disable-next-line no-new
+        // @ts-ignore
         new EUVATCalc();
       }).toThrow();
     });

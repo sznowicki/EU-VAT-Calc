@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "eu-vat-calc": "3.0.0-alpha.5"
+  }
+}
