@@ -4,16 +4,17 @@ export interface CountryRatesSimplified {
     standard_rate: number;
     country_name?: string;
 }
+export interface EUVatCalcOptions {
+    domesticCountry: string | undefined;
+    onlyDomesticTaxPayer: boolean;
+}
 export declare class EUVatCalc {
     domesticCountry: CountryId;
-    domesticPayer: boolean;
+    domesticPayer?: boolean;
     static getRate(countryId: CountryId): CountryRates;
     static isEU(countryId: any): boolean;
     static get rates(): RatesByCountries;
-    constructor({ domesticCountry, onlyDomesticTaxPayer }?: {
-        domesticCountry?: any;
-        onlyDomesticTaxPayer?: boolean;
-    });
+    constructor(options: EUVatCalcOptions);
     /**
      * Returns VAT rates for provided countryId and customer type (isCompany)
      * @param countryId

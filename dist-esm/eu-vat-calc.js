@@ -14,14 +14,14 @@ export class EUVatCalc {
     static get rates() {
         return source.rates;
     }
-    constructor({ domesticCountry = undefined, onlyDomesticTaxPayer = false } = {}) {
-        if (!domesticCountry || typeof domesticCountry !== 'string') {
+    constructor(options) {
+        if (!options?.domesticCountry || typeof options.domesticCountry !== 'string') {
             throw new Error('You must provide domestic country');
         }
         // input validation
-        EUVatCalc.getRate(domesticCountry);
-        this.domesticCountry = domesticCountry;
-        this.domesticPayer = onlyDomesticTaxPayer;
+        EUVatCalc.getRate(options.domesticCountry);
+        this.domesticCountry = options.domesticCountry;
+        this.domesticPayer = options.onlyDomesticTaxPayer;
     }
     /**
      * Returns VAT rates for provided countryId and customer type (isCompany)

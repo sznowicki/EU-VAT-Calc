@@ -6,9 +6,14 @@ export interface CountryRatesSimplified {
   standard_rate: number;
   country_name?: string;
 }
+
+export interface EUVatCalcOptions {
+  domesticCountry: string | undefined;
+  onlyDomesticTaxPayer: boolean
+}
 export class EUVatCalc {
   public domesticCountry: CountryId;
-  public domesticPayer: boolean;
+  public domesticPayer?: boolean;
 
   static getRate(countryId: CountryId): CountryRates {
     if (!this.rates[countryId]) {
@@ -26,15 +31,15 @@ export class EUVatCalc {
     return source.rates;
   }
 
-  constructor({ domesticCountry = undefined, onlyDomesticTaxPayer = false } = {}) {
-    if (!domesticCountry || typeof domesticCountry !== 'string') {
+  constructor(options: EUVatCalcOptions) {
+    if (!options?.domesticCountry || typeof options.domesticCountry !== 'string') {
       throw new Error('You must provide domestic country');
     }
     // input validation
-    EUVatCalc.getRate(domesticCountry);
+    EUVatCalc.getRate(options.domesticCountry);
 
-    this.domesticCountry = domesticCountry;
-    this.domesticPayer = onlyDomesticTaxPayer;
+    this.domesticCountry = options.domesticCountry;
+    this.domesticPayer = options.onlyDomesticTaxPayer;
   }
 
   /**
