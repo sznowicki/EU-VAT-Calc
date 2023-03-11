@@ -1,4 +1,4 @@
-const EUVATCalc = require('../eu-vat-calc');
+import EUVATCalc from '../eu-vat-calc.js'
 
 describe('Main test', () => {
   describe('.constructor.rates test', () => {
