@@ -2,6 +2,7 @@
   "name": "eu-vat-calc",
   "version": "3.0.0-alpha.1",
   "description": "Provide country code, company boolean flag and receive VAT amount (percentage). ",
+  "type": "module",
   "main": "dist-cjs/eu-vat-calc.js",
   "module": "dist-esm/eu-vat-calc.js",
   "types": "dist-types/eu-vat-cald.d.ts",

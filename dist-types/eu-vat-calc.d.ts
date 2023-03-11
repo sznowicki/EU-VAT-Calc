@@ -1,10 +1,10 @@
-import { CountryRates, RatesByCountries } from './res/rates';
+import { CountryRates, RatesByCountries } from './res/rates.js';
 export type CountryId = string;
 export interface CountryRatesSimplified {
     standard_rate: number;
     country_name?: string;
 }
-declare class EUVatCalc {
+export declare class EUVatCalc {
     domesticCountry: CountryId;
     domesticPayer: boolean;
     static getRate(countryId: CountryId): CountryRates;

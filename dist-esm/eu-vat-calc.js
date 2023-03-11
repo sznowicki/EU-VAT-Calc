@@ -1,5 +1,5 @@
-import { source } from './res/rates';
-class EUVatCalc {
+import { source } from './res/rates.js';
+export class EUVatCalc {
     domesticCountry;
     domesticPayer;
     static getRate(countryId) {

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const rates_1 = require("./res/rates");
+exports.EUVatCalc = void 0;
+const rates_js_1 = require("./res/rates.js");
 class EUVatCalc {
     static getRate(countryId) {
         if (!this.rates[countryId]) {
@@ -12,7 +13,7 @@ class EUVatCalc {
         return !!this.rates[countryId];
     }
     static get rates() {
-        return rates_1.source.rates;
+        return rates_js_1.source.rates;
     }
     constructor({ domesticCountry = undefined, onlyDomesticTaxPayer = false } = {}) {
         if (!domesticCountry || typeof domesticCountry !== 'string') {
@@ -51,4 +52,5 @@ class EUVatCalc {
         return EUVatCalc.getRate(countryId);
     }
 }
+exports.EUVatCalc = EUVatCalc;
 exports.default = EUVatCalc;

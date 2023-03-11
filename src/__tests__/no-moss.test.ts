@@ -1,4 +1,4 @@
-import EUVATCalc from '../eu-vat-calc'
+import EUVATCalc from '../eu-vat-calc.js'
 
 describe('Main test', () => {
   describe('PL test', () => {
