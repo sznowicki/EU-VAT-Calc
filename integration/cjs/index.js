@@ -1,7 +1,10 @@
-const EUVatCalc = require("eu-vat-calc");
+const { EUVatCalc } = require("eu-vat-calc");
 
 const main = () => {
-    console.log(EUVatCalc);
+    const calc = new EUVatCalc({
+        domesticCountry: 'PL',
+        domesticPayer: false,
+    });
 };
 
 main();

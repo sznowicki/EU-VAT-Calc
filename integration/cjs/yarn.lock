@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-eu-vat-calc@3.0.0-alpha.3:
-  version "3.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/eu-vat-calc/-/eu-vat-calc-3.0.0-alpha.3.tgz#77aca2f7fb889dfb26a62b2e007537810024496d"
-  integrity sha512-UjdqYvKQQPcGEUylZuHycqshJKYA5uNbefinR89JXeo326ckW+Sc/q3YxppWWrs0B8RvyAWa76qWF77PHR7Bxg==
+eu-vat-calc@3.0.0-alpha.4:
+  version "3.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/eu-vat-calc/-/eu-vat-calc-3.0.0-alpha.4.tgz#fa44cdf9e4006ab745da5384717922cf82291573"
+  integrity sha512-Vlae1PT//WpY5GwfEtx+mpY0bG1VdnZ1yNJbEiioqu1vlsw90gswhHSbCdNL9YsaC3naNf5LdaJvFO0TgW+qHw==

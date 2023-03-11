@@ -6,7 +6,6 @@
     "target": "ESNext",
     "moduleResolution": "NodeNext",
     "module": "ESNext",
-    "declaration": true,
-    "declarationDir": "dist-types"
+    "declaration": true
   }
 }

@@ -5,6 +5,6 @@
     "outDir": "dist-cjs",
     "target": "ES6",
     "module": "commonjs",
-    "declaration": false
+    "declaration": true
   }
 }
