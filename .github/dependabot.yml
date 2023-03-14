@@ -1,3 +1,4 @@
 version: 2
 updates:
-  - allow: production
+  - package-ecosystem: "npm"
+    allow: production
